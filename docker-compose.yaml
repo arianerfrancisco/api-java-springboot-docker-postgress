@@ -20,10 +20,8 @@ services:
     ports:
       - "8081:8081"
     restart: always
-    environment:
-      - POSTGRES_URL=jdbc:postgresql://postgres:5432/parking-control-db
-      - POSTGRES_USER=username
-      - POSTGRES_PASSWORD=123456
+    env_file:
+      - config/db-prod.env
 
 volumes:
   db_data: {}
