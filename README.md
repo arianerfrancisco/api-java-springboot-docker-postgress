@@ -10,5 +10,5 @@
 
 - mvn clean package // build do projeto e assim gerar arquivo .jar 
 - Editar o arquivo DockerFile//application.properties//db-prod.env
-- docker build -t <nome imagem> .
+- docker build -t < nome imagem > .
 - docker run -p 8080:8080 <nome imagem> 
